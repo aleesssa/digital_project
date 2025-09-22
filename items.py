@@ -14,3 +14,12 @@ items = {
     11:("Gaming Mouse", 80.00),
     12:("Seventeen Lightstick", 127.00)
 }
+
+def show_menu():
+    print("\n Welcome to Our Shop!")
+    print("=== Available Products ===")
+    for code, (name, price) in items.items():
+        print(f"[{code}] {name:<25} RM{price:.2f}")
+
+if __name__ == "__main__":
+    show_menu()
