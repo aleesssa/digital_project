@@ -20,6 +20,3 @@ def show_menu():
     print("=== Available Products ===")
     for code, (name, price) in items.items():
         print(f"[{code}] {name:<25} RM{price:.2f}")
-
-if __name__ == "__main__":
-    show_menu()
